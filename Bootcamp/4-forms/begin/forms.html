@@ -10,7 +10,9 @@
 		<section>
 			<h1>Alien Abduction Order Form</h1>
 			<p>Fill out the form below to place an order for an alien abduction by one of our fine UFOs.</p>
-			<form>
+			<form action="https://e3vwdl4bpd.execute-api.us-west-2.amazonaws.com/default/API2SES
+			" method="POST">
+			<input type="hidden"name="send_to" value="jonatas.silva159@etec.sp.gov.br"> 
 				<fieldset>
 				<legend>Your contact information</legend>
 				<label for="name">Your name</label>
@@ -22,6 +24,7 @@
 				<label for="email">Email</label>
 					<input type="email" id="email" name="email">	
 				</fieldset>
+			<fieldset>
 			<legend>About your abduction </legend>
 			<label for="date">Requested  date</label>
 				<input type="date" id="date" name="date">
@@ -57,6 +60,8 @@
 			<label>
 				<input type="checkbox" value="subscribe" name="subscribe"checked> Add me to your email list!
 			</label>
+			</fieldset>
+			<button type="submit"> Order your abduction experience!!!</button>
 			</form>				
 		</section>
 		<aside>
@@ -69,6 +74,7 @@
 			</address>
 		</aside>
 	</div>
+	<script src="js/forms.js"></script>
 </body>
 </html>
 
